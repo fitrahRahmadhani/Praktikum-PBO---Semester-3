@@ -1,0 +1,5 @@
+### TUGAS PRAKTIKUM PEMROGRAMAN BERORIENTASI OBJEK  
+
+Nama: Fitrah Rahmadhani Ahmad  
+Kelas: SIB-2E  
+NIM: 2141762092
