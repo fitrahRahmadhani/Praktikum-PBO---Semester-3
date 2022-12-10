@@ -15,5 +15,7 @@ public class Tester4 {
         ow.showMyEmployee(pEmp);
         System.out.println("----------------------------");
         ow.showMyEmployee(iEmp);
+
+        // ow.pay(iEmp);
     }
 }
