@@ -7,24 +7,29 @@ public class JumpingZombie extends Zombie{
     }
     @Override
     public void heal() {
-        if(level == 1){
-            health += (0.3 * health);
-        }else if(level == 2){
-            health += (0.4 * health);
-        }else if(level == 3){
-            health += (0.5 * health);
+        if(this.level == 1){
+            this.health += (this.health * 3 / 10);
+        }else if(this.level == 2){
+            this.health += (this.health * 4 / 10);
+        }else if(this.level == 3){
+            this.health += (this.health * 5 / 10);
         }
     }
 
     @Override
     public void destroyed() {
-        health -= (0.01 * health);
+        if(this.health > 0){
+            this.health -= (this.health * 1 / 10);
+        }else if(this.health <= 0){
+            this.health = 0;
+            System.out.println("Jumping Zombie is dead");
+        }
     }
     
     @Override
     public String getZombieInfo(){
         return "-- Jumping Zombie --\n" 
         + "Health status: " + this.health +"\n"
-        + "Level status: " + this.level;
+        + "Level status: " + this.level + "\n";
     }
 }
